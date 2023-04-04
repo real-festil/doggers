@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-
-import withProviders from 'src/app/providers';
+import withProviders from './providers';
 
 function App(): JSX.Element {
   return (
