@@ -7,10 +7,10 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint --fix --ext .ts,.tsx ./src"
+    "lint": "eslint --fix --ext .ts,.tsx ./src --max-warnings=0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
+    "**/*.{js,ts,tsx}": [
       "npm run lint"
     ]
   },
