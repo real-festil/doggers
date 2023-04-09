@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -14,5 +14,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", "commitlint.config.js"]
+  "include": ["src", "commitlint.config.js", "./.eslintrc.js", "./.prettierrc.js"]
 }

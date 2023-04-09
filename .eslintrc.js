@@ -2,31 +2,32 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    "react-native/react-native": true,
+    'react-native/react-native': true,
   },
-  extends: ["plugin:react/recommended", "prettier", "@feature-sliced"],
-  parser: "@typescript-eslint/parser",
+  extends: ['plugin:react/recommended', 'prettier', 'airbnb-typescript', '@feature-sliced'],
+  parser: '@typescript-eslint/parser',
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
       },
     },
   },
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
+    project: ['./tsconfig.json'],
+    tsconfigRootDir: __dirname,
   },
-  plugins: ["react", "react-native"],
+  plugins: ['react', 'react-native'],
   rules: {
-    "react/display-name": 0,
+    'react/display-name': 0,
+    'no-console': 1,
+    '@typescript-eslint/no-unnecessary-condition': 'error',
   },
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
 };
