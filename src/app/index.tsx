@@ -1,5 +1,5 @@
 import React from "react";
-import "../i18n/config";
+import "../i18n";
 
 import { useTranslation } from "react-i18next";
 import { Text, View } from "react-native";
