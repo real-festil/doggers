@@ -1,8 +1,9 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import withProviders from './providers';
-import '../i18n/config';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import "../i18n/config";
+
+import { useTranslation } from "react-i18next";
+import { Text, View } from "react-native";
+import withProviders from "./providers";
 
 function App(): JSX.Element {
   const { t, ready } = useTranslation();
@@ -10,12 +11,12 @@ function App(): JSX.Element {
   if (!ready)
     return (
       <View>
-        <Text>{t('common.notifications.loading')}</Text>
+        <Text>{t("common.notifications.loading")}</Text>
       </View>
     );
   return (
     <View>
-      <Text>{t('sup')}</Text>
+      <Text>{t("sup")}</Text>
     </View>
   );
 }
