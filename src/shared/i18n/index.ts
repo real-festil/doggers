@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 
 import { initReactI18next } from 'react-i18next';
+
 import translationEn from './en';
 import translationRu from './ru';
 
@@ -15,12 +16,12 @@ export const resources = {
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next) 
   .init({
-    compatibilityJSON: 'v3', //To make it work for Android devices, add this line.
+    compatibilityJSON: 'v3', 
     resources,
-    lng: 'ru', // default language to use.
+    lng: 'ru', 
     // if you're using a language detector, do not define the lng option
-    // debug: true,
+    debug: true,
   });
 export default i18n;

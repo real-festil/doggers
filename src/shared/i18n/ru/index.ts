@@ -1,3 +1,3 @@
 import translationRu from './translation.json';
 
-export default translationRu
+export default translationRu;
