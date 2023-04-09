@@ -1,3 +1,4 @@
+import { Box } from "native-base";
 import React from "react";
 import "../i18n";
 
@@ -15,9 +16,9 @@ function App(): JSX.Element {
       </View>
     );
   return (
-    <View>
-      <Text>{t("sup")}</Text>
-    </View>
+    <Box backgroundColor="amber.900" flex={1}>
+      {t("sup")}
+    </Box>
   );
 }
 
