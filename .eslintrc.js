@@ -30,6 +30,7 @@ module.exports = {
     'react/display-name': 0,
     'no-console': 1,
     '@typescript-eslint/no-unnecessary-condition': 'error',
+    '@typescript-eslint/no-unused-vars': 'warn',
     'import/order': [
       'error',
       {
