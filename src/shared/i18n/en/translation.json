@@ -1,0 +1,8 @@
+{
+  "sup": "hello there",
+  "common": {
+    "notifications": {
+      "loading": "Loading..."
+    }
+  }
+}
