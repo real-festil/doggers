@@ -1,4 +1,4 @@
-import i18n, { resources } from './config';
+import i18n from './config';
 
 export default i18n;
-export { resources };
+export { resources } from './config';
