@@ -2,11 +2,12 @@ module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
     [
-      'module-resolver',
+      require.resolve('babel-plugin-module-resolver'),
       {
+        cwd: 'babelrc',
+        extensions: ['.ts', '.tsx', '.js', '.ios.js', '.android.js'],
         alias: {
-          // This needs to be mirrored in tsconfig.json
-          shared: './src/shared',
+          src: './src',
           i18n: './src/shared/i18n',
         },
       },

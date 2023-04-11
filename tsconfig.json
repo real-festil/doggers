@@ -16,8 +16,7 @@
     "baseUrl": ".",
     "paths": {
       // This needs to be mirrored in babel.config.js
-      "components/*": ["src/components/*"],
-      "shared/*": ["src/shared/*"],
+      "src/*": ["src/*"],
       "i18n": ["src/shared/i18n/index"]
     }
   },
