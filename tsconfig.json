@@ -13,7 +13,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      // This needs to be mirrored in babel.config.js
+      "components/*": ["src/components/*"],
+      "shared/*": ["src/shared/*"],
+      "i18n": ["src/shared/i18n/index"]
+    }
   },
-  "include": ["src", "commitlint.config.js", "./.eslintrc.js", "./.prettierrc.js"]
+  "include": ["src", "commitlint.config.js", "./.eslintrc.js", "./.prettierrc.js", "./babel.config.js"]
 }

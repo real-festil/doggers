@@ -5,7 +5,6 @@ import { initReactI18next } from 'react-i18next';
 import translationEn from '../en';
 import translationRu from '../ru';
 
-
 export const resources = {
   en: {
     translation: translationEn,

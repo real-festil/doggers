@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Box } from 'native-base';
-import 'src/shared/i18n';
+import 'i18n';
 
 import { useTranslation } from 'react-i18next';
 import { Text, View } from 'react-native';
