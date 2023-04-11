@@ -27,6 +27,7 @@ module.exports = {
   },
   plugins: ['react', 'react-native'],
   rules: {
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
     'react/display-name': 0,
     'no-console': 1,
     '@typescript-eslint/no-unnecessary-condition': 'error',
