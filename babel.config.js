@@ -19,9 +19,9 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', '.ios.js', '.android.js'],
         alias: {
           src: './src',
+          i18n: './src/shared/i18n',
         },
       },
     ],
-    // 'react-native-reanimated/plugin',
   ],
 };
