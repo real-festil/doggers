@@ -41,6 +41,11 @@ module.exports = {
             group: 'external',
             position: 'before',
           },
+          {
+            pattern: 'src/**',
+            group: 'external',
+            position: 'after',
+          },
         ],
         pathGroupsExcludedImportTypes: ['react'],
         'newlines-between': 'always-and-inside-groups',
