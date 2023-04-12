@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { NativeBaseProvider } from 'native-base';
+
 import { colorModeManager, theme } from 'src/shared/theme';
 
 const withUI = (component: () => React.ReactNode) => () => {
