@@ -2,9 +2,10 @@ import React from 'react';
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import { Box, Button, Text } from 'native-base';
+import { Box } from 'native-base';
 
 import { AuthNavigationList, AuthNavigationRoutes } from 'src/pages/auth/types';
+import Button from 'src/shared/ui/button/Button';
 
 interface InitialFormProps {
   navigation: NativeStackNavigationProp<AuthNavigationList, AuthNavigationRoutes.Initial>;
@@ -13,11 +14,8 @@ interface InitialFormProps {
 const InitialForm: React.FC<InitialFormProps> = ({ navigation }) => {
   return (
     <Box>
-      <Text>InitialForm</Text>
-      <Button mb={4} onPress={() => navigation.navigate('SignIn')}>
-        Sign in
-      </Button>
-      <Button onPress={() => navigation.navigate('SignUp')}>Sign up</Button>
+      <Button label="Sign in" mb={4} onPress={() => navigation.navigate('SignIn')} />
+      <Button label="Sign up" onPress={() => navigation.navigate('SignUp')} />
     </Box>
   );
 };

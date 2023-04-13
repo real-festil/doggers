@@ -1,2 +1,2 @@
-export * from './DefaultLayout';
-export * from './ScrollView';
+export * from './default-layout';
+export * from './scroll-view';

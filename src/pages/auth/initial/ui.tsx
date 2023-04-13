@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import DefaultLayout from 'src/shared/ui/DefaultLayout';
+import DefaultLayout from 'src/shared/ui/default-layout/DefaultLayout';
 
 import { InitialForm } from 'src/widgets/auth/initial-form';
 
@@ -12,7 +12,7 @@ const InitialPage: React.FC<NativeStackScreenProps<AuthNavigationList, AuthNavig
   navigation,
 }) => {
   return (
-    <DefaultLayout>
+    <DefaultLayout withInsets>
       <InitialForm navigation={navigation} />
     </DefaultLayout>
   );

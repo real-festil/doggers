@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Center, Container } from 'native-base';
+import { Center } from 'native-base';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, StyleProp, ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -17,8 +17,8 @@ const DefaultLayout: React.FC<IDefaultLayoutProps> = ({
   children,
   isLoading,
   style,
-  withHorizontalPadding = true,
-  withInsets = true,
+  withHorizontalPadding = false,
+  withInsets = false,
 }) => {
   const { ready } = useTranslation();
   const insets = useSafeAreaInsets();
@@ -26,14 +26,12 @@ const DefaultLayout: React.FC<IDefaultLayoutProps> = ({
   const isReady = ready && !isLoading;
   const additionalStyles: StyleProp<ViewStyle> = [
     withHorizontalPadding ? { paddingHorizontal: 16 } : {},
-    withInsets ? { paddingTop: insets.top, paddingBottom: insets.bottom } : {},
+    withInsets ? { paddingTop: insets.top || 20, paddingBottom: insets.bottom || 20 } : {},
   ];
 
   return (
-    <Center>
-      <Container style={[...additionalStyles, style]}>
-        {isReady ? children : <ActivityIndicator style={{ alignSelf: 'center', flex: 1 }} size="large" />}
-      </Container>
+    <Center style={[...additionalStyles, style]}>
+      {isReady ? children : <ActivityIndicator style={{ alignSelf: 'center', flex: 1 }} size="large" />}
     </Center>
   );
 };

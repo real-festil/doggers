@@ -2,7 +2,7 @@ import React from 'react';
 
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import DefaultLayout from 'src/shared/ui/DefaultLayout';
+import DefaultLayout from 'src/shared/ui/default-layout/DefaultLayout';
 
 import { SignInForm } from 'src/widgets/auth/sign-in-form';
 
