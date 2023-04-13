@@ -12,7 +12,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["@types/styled-components-react-native"],
     "noEmit": true,
     "baseUrl": ".",
     "paths": {

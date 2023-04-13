@@ -5,7 +5,7 @@ import { View } from 'react-native';
 import { SignUpByPhoneForm } from 'src/features/auth/sign-up-by-phone';
 import { SignToggle } from 'src/features/auth/toggle-sign';
 
-const SignInForm = () => {
+const SignUpForm = () => {
   return (
     <View>
       <SignUpByPhoneForm />
@@ -14,4 +14,4 @@ const SignInForm = () => {
   );
 };
 
-export default SignInForm;
+export default SignUpForm;

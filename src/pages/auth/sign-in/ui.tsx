@@ -1,14 +1,18 @@
 import React from 'react';
 
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+import DefaultLayout from 'src/shared/ui/DefaultLayout';
 
 import { SignInForm } from 'src/widgets/auth/sign-in-form';
 
-const SignIn = () => {
+import { AuthNavigationList, AuthNavigationRoutes } from '../types';
+
+const SignIn: React.FC<NativeStackScreenProps<AuthNavigationList, AuthNavigationRoutes.SignIn>> = ({}) => {
   return (
-    <SafeAreaView>
+    <DefaultLayout>
       <SignInForm />
-    </SafeAreaView>
+    </DefaultLayout>
   );
 };
 
