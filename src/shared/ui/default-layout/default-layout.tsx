@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import { Center } from 'native-base';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +13,7 @@ interface IDefaultLayoutProps {
   style?: StyleProp<ViewStyle>;
 }
 
-const DefaultLayout: React.FC<IDefaultLayoutProps> = ({
+const DefaultLayout: FunctionComponent<IDefaultLayoutProps> = ({
   children,
   isLoading,
   style,

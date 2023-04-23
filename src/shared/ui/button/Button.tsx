@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import { Button as NativeButton, Text } from 'native-base';
 import { InterfaceButtonProps } from 'native-base/lib/typescript/components/primitives/Button/types';
@@ -10,7 +10,7 @@ interface IButtonProps extends InterfaceButtonProps {
   textProps?: InterfaceTextProps;
 }
 
-const Button: React.FC<IButtonProps> = ({ label, children, textProps, ...rest }) => {
+const Button: FunctionComponent<IButtonProps> = ({ label, children, textProps, ...rest }) => {
   return (
     <NativeButton {...rest}>
       {label && (

@@ -12,7 +12,7 @@ const Stack = createStackNavigator<AuthNavigationList>();
 
 const AuthStackContainer = () => {
   return (
-    <Stack.Navigator initialRouteName="Initial" screenOptions={DEFAULT_SCREEN_OPTIONS}>
+    <Stack.Navigator initialRouteName={AuthNavigationRoutes.Initial} screenOptions={DEFAULT_SCREEN_OPTIONS}>
       <Stack.Screen name={AuthNavigationRoutes.Initial} component={InitialPage} />
       <Stack.Screen name={AuthNavigationRoutes.SignIn} component={SignInPage} />
       <Stack.Screen name={AuthNavigationRoutes.SignUp} component={SignUpPage} />

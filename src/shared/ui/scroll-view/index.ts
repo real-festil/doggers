@@ -1,3 +1,3 @@
-import ScrollView from './ScrollView';
+import ScrollView from './scroll-view';
 
 export default ScrollView;

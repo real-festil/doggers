@@ -1,5 +1,4 @@
 import { extendTheme } from 'native-base';
-
 import { Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
