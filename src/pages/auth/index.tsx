@@ -6,7 +6,7 @@ import { InitialPage } from 'src/pages/auth/initial';
 import { SignInPage } from 'src/pages/auth/sign-in';
 import { SignUpPage } from 'src/pages/auth/sign-up';
 import { AuthNavigationList, AuthNavigationRoutes } from 'src/pages/auth/types/stack-list';
-import { DEFAULT_SCREEN_OPTIONS } from 'src/shared/navigator-options';
+import { DEFAULT_SCREEN_OPTIONS } from 'src/shared/navigator';
 
 const Stack = createStackNavigator<AuthNavigationList>();
 

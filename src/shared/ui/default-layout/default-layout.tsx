@@ -5,15 +5,15 @@ import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, StyleProp, ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-interface IDefaultLayoutProps {
+type DefaultLayoutProps = {
   children: React.ReactNode;
   isLoading?: boolean;
   withHorizontalPadding?: boolean;
   withInsets?: boolean;
   style?: StyleProp<ViewStyle>;
-}
+};
 
-const DefaultLayout: FunctionComponent<IDefaultLayoutProps> = ({
+const DefaultLayout: FunctionComponent<DefaultLayoutProps> = ({
   children,
   isLoading,
   style,

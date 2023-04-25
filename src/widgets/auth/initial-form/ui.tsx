@@ -4,11 +4,11 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Box } from 'native-base';
 
 import { AuthNavigationList, AuthNavigationRoutes } from 'src/pages/auth/types';
-import Button from 'src/shared/ui/button/button';
+import Button from 'src/shared/ui/button';
 
-interface InitialFormProps {
+type InitialFormProps = {
   navigation: NativeStackNavigationProp<AuthNavigationList, AuthNavigationRoutes.Initial>;
-}
+};
 
 const InitialForm: FunctionComponent<InitialFormProps> = ({ navigation }) => {
   return (
