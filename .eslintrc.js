@@ -20,6 +20,9 @@ module.exports = {
     },
   },
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
     ecmaVersion: 12,
     sourceType: 'module',
     project: ['./tsconfig.json'],
@@ -28,6 +31,7 @@ module.exports = {
   plugins: ['react', 'react-native'],
   rules: {
     'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
+    'space-in-parens': ['error', 'never'],
     'react/display-name': 0,
     'no-console': 1,
     '@typescript-eslint/no-unnecessary-condition': 'error',
@@ -49,7 +53,7 @@ module.exports = {
           },
         ],
         pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'always-and-inside-groups',
+        'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
           caseInsensitive: true,
