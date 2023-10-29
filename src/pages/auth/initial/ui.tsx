@@ -1,4 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
+import { FunctionComponent } from 'react';
 
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 

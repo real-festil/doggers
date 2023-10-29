@@ -1,15 +1,15 @@
+import { Box } from 'native-base';
 import React from 'react';
-
 import { View } from 'react-native';
-
-import { SignInByPhoneForm } from 'src/features/auth/sign-in-by-phone';
+import { SignInByEmailForm } from 'src/features/auth/sign-in-by-email';
 import { SignToggle } from 'src/features/auth/toggle-sign';
+import DefaultLayout from 'src/shared/ui/default-layout';
 
-const SignInForm = () => {
+export const SignInForm = () => {
   return (
     <View>
-      <SignInByPhoneForm />
-      <SignToggle />
+      <SignInByEmailForm />
+      {/* <SignToggle /> */}
     </View>
   );
 };

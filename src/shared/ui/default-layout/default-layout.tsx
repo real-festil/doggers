@@ -26,7 +26,7 @@ const DefaultLayout: FunctionComponent<DefaultLayoutProps> = ({
   const isReady = ready && !isLoading;
   const additionalStyles: StyleProp<ViewStyle> = [
     withHorizontalPadding ? { paddingHorizontal: 16 } : {},
-    withInsets ? { paddingTop: insets.top || 20, paddingBottom: insets.bottom || 20 } : {},
+    withInsets ? { paddingTop: insets.top || 20, paddingBottom: insets.bottom || 20, paddingHorizontal: 20 } : {},
   ];
 
   return (

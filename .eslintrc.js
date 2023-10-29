@@ -36,6 +36,7 @@ module.exports = {
     'no-console': 1,
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unused-vars': 'warn',
+    // '@typescript-eslint/indent': ['error', 'tab', 2],
     'import/order': [
       'error',
       {
