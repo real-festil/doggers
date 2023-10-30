@@ -3,3 +3,4 @@ node_modules/
 !.eslintrc.js
 metro.config.js
 index.js
+.env

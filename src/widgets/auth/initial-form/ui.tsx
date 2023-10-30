@@ -13,8 +13,9 @@ type InitialFormProps = {
 const InitialForm: FunctionComponent<InitialFormProps> = ({ navigation }) => {
   return (
     <Box>
-      <Button label="Sign in" mb={4} onPress={() => navigation.navigate('SignIn')} />
-      <Button label="Sign up" onPress={() => navigation.navigate('SignUp')} />
+      <Button label="Sign in" mb={4} onPress={() => navigation.navigate(AuthNavigationRoutes.SignIn)} />
+
+      <Button label="Sign up" onPress={() => navigation.navigate(AuthNavigationRoutes.SelectUserType)} />
     </Box>
   );
 };

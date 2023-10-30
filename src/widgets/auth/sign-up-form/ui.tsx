@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { FunctionComponent, useState } from 'react';
 
 import { View } from 'react-native';
 
-import { SignUpByPhoneForm } from 'src/features/auth/sign-up-by-phone';
+import { SignUpByEmailForm } from 'src/features/auth/sign-up-by-email';
 import { SignToggle } from 'src/features/auth/toggle-sign';
 
-const SignUpForm = () => {
+type SignUpFormProps = {
+  userType: string;
+  toggleRegister: () => void;
+};
+
+const SignUpForm: FunctionComponent<SignUpFormProps> = ({ userType, toggleRegister }) => {
   return (
     <View>
-      <SignUpByPhoneForm />
-      <SignToggle />
+      <SignUpByEmailForm userType={userType} />
+      <SignToggle label={'signIn'} onPress={toggleRegister} />
     </View>
   );
 };

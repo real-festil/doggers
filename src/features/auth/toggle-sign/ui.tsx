@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
-const Toggle = () => {
+import Button from 'src/shared/ui/button';
+
+type ToggleProps = {
+  onPress: () => void;
+  label: string;
+};
+
+const Toggle: FunctionComponent<ToggleProps> = ({ onPress, label }) => {
   return (
     <View>
-      <Text>Toggle</Text>
+      <Button label={label} onPress={onPress} />
     </View>
   );
 };

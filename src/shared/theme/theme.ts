@@ -25,7 +25,6 @@ const theme = extendTheme({
     Center: {
       defaultProps: {
         flex: 1,
-
       },
     },
     Container: {
@@ -49,7 +48,11 @@ const theme = extendTheme({
         textAlign: 'center',
       },
     },
-   
+    Input: {
+      baseStyle: {
+        maxHeight: 10,
+      },
+    },
   },
 });
 
